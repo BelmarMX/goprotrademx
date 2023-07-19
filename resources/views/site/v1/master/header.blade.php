@@ -6,7 +6,7 @@
 <div class="top-navbar style-4">
     <div class="container">
         <div class="content text-white">
-            <img src="{{ asset('v2/img/icons/nav_icon/imoj_heart.png') }}" alt="" class="icon-15">
+            <img src="{{ asset('v1/img/icons/nav_icon/imoj_heart.png') }}" alt="" class="icon-15">
             <span class="fs-10px op-6">Podemos ayudarte</span>
             <a href="page-contact-5.html" class="fs-10px text-decoration-underline ms-2">Escríbenos</a>
         </div>
@@ -21,7 +21,7 @@
             <img width="150"
                  height="57"
                  src="{{ asset('v1/images/layout/logo-moca-png.png') }}"
-                 alt="Soluciones MOCA ID"
+                 alt="GoProTradeMX ID"
             />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -110,14 +110,14 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="img">
-                        {{-- <img src="{{ asset('v2/img/header/header_4.png') }}" alt=""> --}}
-                        <img src="{{ asset('v2/img/v2t/bussines_monitor.png') }}" alt="">
+                        {{-- <img src="{{ asset('v1/img/header/header_4.png') }}" alt=""> --}}
+                        <img src="{{ asset('v1/img/v2t/bussines_monitor.png') }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <img src="{{ asset('v2/img/header/header_4_bubble.png') }}" alt="" class="bubble">
+        <img src="{{ asset('v1/img/header/header_4_bubble.png') }}" alt="" class="bubble">
     </div>
-    <img src="{{ asset('v2/img/header/header_4_wave.png') }}" alt="" class="wave">
+    <img src="{{ asset('v1/img/header/header_4_wave.png') }}" alt="" class="wave">
 </header>
 <!-- ====== end header ====== -->

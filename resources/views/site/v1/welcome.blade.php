@@ -1,4 +1,4 @@
-@extends('site.v2.master.app')
+@extends('site.v1.master.app')
 
 {{-- meta tags --}}
 @section('title',         'Bienvenidos')
@@ -21,20 +21,20 @@
             <div class="content">
                 <div class="features-card">
                     <div class="icon img-contain">
-                        <img src="{{ asset('v2/img/icons/fe1.png') }}" alt="">
+                        <img src="{{ asset('v1/img/icons/fe1.png') }}" alt="">
                     </div>
                     <h6>Desarrollo<br>de Software</h6>
                 </div>
                 <div class="features-card">
                     <div class="icon img-contain">
-                        <img src="{{ asset('v2/img/icons/fe2.png') }}" alt="">
+                        <img src="{{ asset('v1/img/icons/fe2.png') }}" alt="">
                     </div>
                     <h6>Big Data e<br>Inteligencia de negocio</h6>
                 </div>
                 {{--
                 <div class="features-card">
                     <div class="icon img-contain">
-                        <img src="{{ asset('v2/img/icons/fe3.png') }}" alt="">
+                        <img src="{{ asset('v1/img/icons/fe3.png') }}" alt="">
                         <span
                             class="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold">
                                 new
@@ -45,19 +45,19 @@
                 --}}
                 <div class="features-card">
                     <div class="icon img-contain">
-                        <img src="{{ asset('v2/img/icons/fe4.png') }}" alt="">
+                        <img src="{{ asset('v1/img/icons/fe4.png') }}" alt="">
                     </div>
                     <h6>Consultoría en<br>aceleración del negocio</h6>
                 </div>
                 <div class="features-card">
                     <div class="icon img-contain">
-                        <img src="{{ asset('v2/img/icons/fe5.png') }}" alt="">
+                        <img src="{{ asset('v1/img/icons/fe5.png') }}" alt="">
                     </div>
                     <h6>Diseño<br> gráfico</h6>
                 </div>
             </div>
         </div>
-        <img src="{{ asset('v2/img/feat_circle.png') }}" alt="" class="img-circle">
+        <img src="{{ asset('v1/img/feat_circle.png') }}" alt="" class="img-circle">
     </section>
     <!-- ====== end features ====== -->
 
@@ -69,8 +69,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6">
                         <div class="img mb-30 mb-lg-0">
-                            {{-- <img src="{{ asset('v2/img/about/ipad.png') }}" alt=""> --}}
-                            <img src="{{ asset('v2/img/v2t/mision.png') }}" alt="">
+                            {{-- <img src="{{ asset('v1/img/about/ipad.png') }}" alt=""> --}}
+                            <img src="{{ asset('v1/img/v2t/mision.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5">
@@ -85,8 +85,8 @@
                     </div>
                 </div>
             </div>
-            <img src="{{ asset('v2/img/about/about_s4_lines.png') }}" alt="" class="lines">
-            <img src="{{ asset('v2/img/about/about_s4_bubble.png') }}" alt="" class="bubble">
+            <img src="{{ asset('v1/img/about/about_s4_lines.png') }}" alt="" class="lines">
+            <img src="{{ asset('v1/img/about/about_s4_bubble.png') }}" alt="" class="bubble">
         </div>
         {{-- VISION --}}
         <div class="content sec-content" id="vision" data-scroll-index="2">
@@ -98,19 +98,19 @@
                                 <h2 class="mb-30"><span>Visión</span> </h2>
                             </div>
                             <p class="text mb-40">
-                                Soluciones MOCA elige ser un líder en el servicio a nuestros clientes, avanzando nuestras tecnologías y premiar a todos los que invierten en nosotros para mantener nuestro liderazgo, sin descanso buscando mejorar nuestro desempeño. Traemos urgencia a todos los desafíos de negocios y oportunidades. Anticipamos cambiar y darle forma a nuestro propósito. Animamos a las nuevas ideas que desafían lo imposible y buscamos involucrar cada mente en el crecimiento de nuestro negocio, por lo cual siempre nos mantenemos con un hambre de servir.
+                                GoProTradeMX elige ser un líder en el servicio a nuestros clientes, avanzando nuestras tecnologías y premiar a todos los que invierten en nosotros para mantener nuestro liderazgo, sin descanso buscando mejorar nuestro desempeño. Traemos urgencia a todos los desafíos de negocios y oportunidades. Anticipamos cambiar y darle forma a nuestro propósito. Animamos a las nuevas ideas que desafían lo imposible y buscamos involucrar cada mente en el crecimiento de nuestro negocio, por lo cual siempre nos mantenemos con un hambre de servir.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 order-0 order-lg-2">
                         <div class="img mb-30 mb-lg-0">
-                            {{-- <img src="{{ asset('v2/img/about/2mobiles.png') }}" alt=""> --}}
-                            <img src="{{ asset('v2/img/v2t/vision-2.png') }}" alt="">
+                            {{-- <img src="{{ asset('v1/img/about/2mobiles.png') }}" alt=""> --}}
+                            <img src="{{ asset('v1/img/v2t/vision-2.png') }}" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="{{ asset('v2/img/about/about_s4_bubble2.png') }}" alt="" class="bubble2">
+            <img src="{{ asset('v1/img/about/about_s4_bubble2.png') }}" alt="" class="bubble2">
         </div>
         {{-- SERVICIOS --}}
         <div class="content trd-content" id="servicios" data-scroll-index="3">
@@ -118,8 +118,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6">
                         <div class="img mb-30 mb-lg-0">
-                            {{--<img src="{{ asset('v2/img/about/about_s4_img3.png') }}" alt="">--}}
-                            <img src="{{ asset('v2/img/v2t/software_development.png') }}" alt="">
+                            {{--<img src="{{ asset('v1/img/about/about_s4_img3.png') }}" alt="">--}}
+                            <img src="{{ asset('v1/img/v2t/software_development.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5">
@@ -139,8 +139,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 order-2">
                         <div class="img mb-30 mb-lg-0">
-                            {{--<img src="{{ asset('v2/img/about/about_s4_img3.png') }}" alt="">--}}
-                            <img src="{{ asset('v2/img/v2t/big_data.png') }}" alt="">
+                            {{--<img src="{{ asset('v1/img/about/about_s4_img3.png') }}" alt="">--}}
+                            <img src="{{ asset('v1/img/v2t/big_data.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5 order-1">
@@ -150,7 +150,7 @@
                                 <h2 class="mb-30">Big Data e <span>Inteligencia de negocio</span> </h2>
                             </div>
                             <p class="text mb-40">
-                                Los administradores de bases de datos (DBA) suelen ser los héroes anónimos de las organizaciones de TI, y no es fácil encontrar a dichos profesionales con tales habilidades. Y ahí es donde nosotros, Soluciones MOCA, podemos ayudar. Nuestros expertos estarán con usted durante todas las etapas de su proyecto, ya sea que esté iniciando su ciclo de vida o esté a punto de iniciar un cambio mayor de arquitectura, para ayudarlo a tomar decisiones que son cruciales para el futuro de sus aplicaciones.
+                                Los administradores de bases de datos (DBA) suelen ser los héroes anónimos de las organizaciones de TI, y no es fácil encontrar a dichos profesionales con tales habilidades. Y ahí es donde nosotros, GoProTradeMX, podemos ayudar. Nuestros expertos estarán con usted durante todas las etapas de su proyecto, ya sea que esté iniciando su ciclo de vida o esté a punto de iniciar un cambio mayor de arquitectura, para ayudarlo a tomar decisiones que son cruciales para el futuro de sus aplicaciones.
                             </p>
                         </div>
                     </div>
@@ -160,8 +160,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6">
                         <div class="img mb-30 mb-lg-0">
-                            {{--<img src="{{ asset('v2/img/about/about_s4_img3.png') }}" alt="">--}}
-                            <img src="{{ asset('v2/img/v2t/business_growth.png') }}" alt="">
+                            {{--<img src="{{ asset('v1/img/about/about_s4_img3.png') }}" alt="">--}}
+                            <img src="{{ asset('v1/img/v2t/business_growth.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5">
@@ -181,8 +181,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 order-2">
                         <div class="img mb-30 mb-lg-0">
-                            {{--<img src="{{ asset('v2/img/about/about_s4_img3.png') }}" alt="">--}}
-                            <img src="{{ asset('v2/img/v2t/graphic_design.png') }}" alt="">
+                            {{--<img src="{{ asset('v1/img/about/about_s4_img3.png') }}" alt="">--}}
+                            <img src="{{ asset('v1/img/v2t/graphic_design.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5 order-1">
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <img src="{{ asset('v2/img/about/about_s4_bubble.png') }}" alt="" class="bubble">
+            <img src="{{ asset('v1/img/about/about_s4_bubble.png') }}" alt="" class="bubble">
         </div>
 
         <div class="integration pt-60">
@@ -210,10 +210,10 @@
                     </div>
                 </div>
             </div>
-            <img src="{{ asset('v2/img/about/intg_back.png') }}" alt="" class="intg-back">
+            <img src="{{ asset('v1/img/about/intg_back.png') }}" alt="" class="intg-back">
         </div>
-        <img src="{{ asset('v2/img/about/about_s4_wave.png') }}" alt="" class="top-wave">
-        <img src="{{ asset('v2/img/about/about_s4_wave.png') }}" alt="" class="bottom-wave">
+        <img src="{{ asset('v1/img/about/about_s4_wave.png') }}" alt="" class="top-wave">
+        <img src="{{ asset('v1/img/about/about_s4_wave.png') }}" alt="" class="bottom-wave">
     </section>
     <!-- ====== end about ====== -->
 

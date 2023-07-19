@@ -23,7 +23,7 @@ class NavigationController extends Controller
 
     public function index()
     {
-        return view('site.v2.welcome') -> with([
+        return view('site.v1.welcome') -> with([
                 'all_categories'    => parent::get_categories()
             ,   'lastest'           => parent::lastest_articles(3)
             ,   'banners'           => parent::get_banners()
@@ -32,14 +32,14 @@ class NavigationController extends Controller
 
     public function embed($code)
     {
-        return view('site.v2.embebido') -> with([
+        return view('site.v1.embebido') -> with([
             'gallery' => Gallery::where('insertion_code', $code) -> with('elements') -> first()
         ]);
     }
 
     public function avisoPrivacidad()
     {
-        return view('site.v2.aviso-privacidad') -> with([
+        return view('site.v1.aviso-privacidad') -> with([
                 'all_categories' => parent::get_categories()
         ]);
     }
@@ -52,7 +52,7 @@ class NavigationController extends Controller
             -> orderBy('created_at', 'DESC')
             -> paginate(10);
 
-        return view('site.v2.blog') -> with([
+        return view('site.v1.blog') -> with([
                 'entries'           => $entries
             ,   'blog_categories'   => parent::get_categories()
         ]);
@@ -73,7 +73,7 @@ class NavigationController extends Controller
             -> orderBy('created_at', 'DESC')
             -> paginate(10);
 
-        return view('site.v2.por-categoria') -> with([
+        return view('site.v1.por-categoria') -> with([
                 'blog_categories'   => parent::get_categories()
             ,   'lastest'           => parent::lastest_articles(3)
             ,   'record'            => $record
@@ -102,7 +102,7 @@ class NavigationController extends Controller
             -> limit(3)
             -> get();
 
-        return view('site.v2.articulo') -> with([
+        return view('site.v1.articulo') -> with([
                 'blog_categories'    => parent::get_categories()
             ,   'record'            => $record
             ,   'related'           => $related
@@ -110,13 +110,13 @@ class NavigationController extends Controller
     }
 
     public function contact(){
-        return view('site.v2.contacto', [
+        return view('site.v1.contacto', [
             'banners'           => parent::get_banners()
         ]);
     }
 
     public function gracias(){
-        return view('site.v2.gracias') -> with([
+        return view('site.v1.gracias') -> with([
                 'all_categories'    => parent::get_categories()
         ]);
     }

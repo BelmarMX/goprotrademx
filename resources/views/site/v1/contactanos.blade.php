@@ -1,4 +1,4 @@
-@extends('site.v2.master.app')
+@extends('site.v1.master.app')
 
 {{-- meta tags --}}
 @section('title',         'Contáctanos')

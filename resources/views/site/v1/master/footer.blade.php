@@ -12,7 +12,7 @@
                         <img width="150"
                              height="57"
                              src="{{ asset('v1/images/layout/logo-moca-png.png') }}"
-                             alt="Soluciones MOCA ID"
+                             alt="GoProTradeMX ID"
                         />
                     </div>
                 </div>
@@ -49,11 +49,11 @@
         </div>
         <div class="copywrite text-center">
             <small class="small">
-                © 2022 <a href="/" class="fw-bold text-decoration-underline">Soluciones MOCA.</a> Derechos Reservados.
+                © 2022 <a href="/" class="fw-bold text-decoration-underline">GoProTradeMX.</a> Derechos Reservados.
             </small>
         </div>
     </div>
-    <img src="{{ asset('v2/img/footer/footer_4_wave.png') }}" alt="" class="wave">
+    <img src="{{ asset('v1/img/footer/footer_4_wave.png') }}" alt="" class="wave">
 </footer>
 <!-- ====== end footer ====== -->
 

@@ -1,4 +1,4 @@
-@extends('site.v2.master.app')
+@extends('site.v1.master.app')
 
 {{-- meta tags --}}
 @section('title',         'Escríbenos')
@@ -23,7 +23,7 @@
                 <div class="content rounded-pill">
                     <div class="commun-card">
                         <div class="icon icon-45">
-                            <img src="{{ asset('v2/img/icons/mail3d.png') }}" alt="">
+                            <img src="{{ asset('v1/img/icons/mail3d.png') }}" alt="">
                         </div>
                         <div class="inf">
                             <h5>contacto@solucionesmoca.com </h5>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="commun-card">
                         <div class="icon icon-45">
-                            <img src="{{ asset('v2/img/icons/map3d.png') }}" alt="">
+                            <img src="{{ asset('v1/img/icons/map3d.png') }}" alt="">
                         </div>
                         <div class="inf">
                             <h5>Guadalajara, Jalisco.</h5>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="commun-card">
                         <div class="icon icon-45">
-                            <img src="{{ asset('v2/img/icons/msg3d.png') }}" alt="">
+                            <img src="{{ asset('v1/img/icons/msg3d.png') }}" alt="">
                         </div>
                         <div class="inf">
                             <h5>(+52) 33 3390 0219</h5>
@@ -99,8 +99,8 @@
                             </form>
                         </div>
                     </div>
-                    <img src="{{ asset('v2/img/icons/contact_a.png') }}" alt="" class="contact_a">
-                    <img src="{{ asset('v2/img/icons/contact_message.png') }}" alt="" class="contact_message">
+                    <img src="{{ asset('v1/img/icons/contact_a.png') }}" alt="" class="contact_a">
+                    <img src="{{ asset('v1/img/icons/contact_message.png') }}" alt="" class="contact_message">
                 </div>
             </div>
         </section>

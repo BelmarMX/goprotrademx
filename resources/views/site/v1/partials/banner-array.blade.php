@@ -33,7 +33,7 @@
             </a>
         </div>
         @if( count($banners) > 0 )
-            @include('site.v2.partials.banner-indicators', ['target' => '#banner__slider'])
+            @include('site.v1.partials.banner-indicators', ['target' => '#banner__slider'])
         @endif
     </div>
 </div>

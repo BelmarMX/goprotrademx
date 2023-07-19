@@ -1,4 +1,4 @@
-@extends('site.v2.master.app')
+@extends('site.v1.master.app')
 
 {{-- meta tags --}}
 @section('title',         'Blog de artículos')
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-lg-8">
                         @foreach($entries AS $entry)
-                            @include('site.v2.partials.blog-card', [
+                            @include('site.v1.partials.blog-card', [
                                     'link'          => route('blog-article', [$entry -> category -> slug, $entry -> slug])
                                 ,   'image'         => url('storage/'.env('MIX_IMG_ARTICULO_DIR').'/'.$entry -> thumbnail)
                                 ,   'title'         => $entry -> title
