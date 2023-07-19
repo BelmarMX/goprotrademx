@@ -1,0 +1,415 @@
+/* --- --- --- --- --- --- --- --- --- ---
+| GENERAL STYLES
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+a,
+a:link,
+a:visited,
+a:active{
+    color: $dark;
+    text-decoration: none;
+    @include ease();
+    *{
+        @include ease(.3s);
+    }
+
+    &:not(#WhatsappButton, .not-kb, .navbar-brand){
+        img{
+            @include kenburn_exit();
+        }
+        &:hover{
+            img{
+                @include kenburn();
+            }
+        }
+    }
+}
+
+.btn.btn-next{
+    text-transform: uppercase;
+    font-size: .95rem;
+    &:after{
+        content: "\f135";
+        display: inline-block;
+        font-family: bootstrap-icons !important;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400!important;
+        line-height: 1;
+        text-transform: none;
+        vertical-align: -0.125em;
+    }
+}
+
+.with-kenburn{
+    img{
+        @include kenburn_exit();
+    }
+    &:hover{
+        img{
+            @include kenburn();
+        }
+    }
+}
+
+.max-w-100{
+    max-width: 100%;
+}
+
+.text-small{
+    font-size: $text-small;
+}
+.font-14,
+.font-14 p{
+    font-size: 14px !important;
+}
+
+/* --- --- --- --- --- --- --- --- --- ---
+| BOOTSTRAP OVERRIDE
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+*.bi{
+    font-size: 24px;
+    vertical-align: middle;
+}
+hr{
+    margin: 1rem 0;
+}
+button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: $auxiliar_font;
+    text-transform: uppercase;
+}
+.btn.btn-primary{
+    background: $primary;
+    border: $primary;
+    font-family: $auxiliar_font;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 0 0 0 6px;
+    &:hover{
+        border: lighten($primary, 20%);
+        background: darken($primary, 20%);
+    }
+}
+.btn.btn-secondary{
+    background: none;
+    border: none;
+    color: $primary;
+    font-family: $auxiliar_font;
+    text-transform: uppercase;
+
+    &:hover{
+        color: $secondary;
+    }
+
+    &:after{
+        @include iconizer();
+        content: "\F135";
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- ---
+| HEADER
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+@import 'partials/header';
+@import 'partials/banner';
+@import 'partials/article-square';
+
+/* --- --- --- --- --- --- --- --- --- ---
+| BODY
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+body{
+    font-family: $primary-font;
+}
+
+.grow-it{
+    &:hover{
+        @include grow-and-shrink();
+    }
+}
+
+section.parallax-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain !important;
+    padding: 5vw;
+
+    h1, h2
+    {
+        color: $white !important;
+        text-transform: uppercase;
+        font-weight: $font-light;
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+        strong{
+            display: block;
+            font-weight: $font_bold;
+            font-size: 3rem;
+        }
+        &.text-primary{
+            color: $primary_color !important;
+        }
+    }
+    p{
+        color: $white;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: $font-light;
+    }
+
+    &#mision{
+        background: url('/images/layout/bg-pattern-l.png') $primary left center no-repeat;
+    }
+    &#vision,
+    &#blog{
+        background: url('/images/layout/bg-pattern-r.png') $white right center no-repeat;
+
+        h2, p{
+            color: $primary !important;
+        }
+        p{
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+    &#servicios{
+        background: url('/images/layout/bg-pattern-l.png') $primary_palid left center no-repeat;
+
+        h3{
+            font-weight: $font-thin;
+        }
+    }
+}
+
+h1.nsj
+{
+    color: $white !important;
+    text-transform: uppercase;
+    font-weight: $font-light;
+    font-size: 1.5rem;
+    line-height: 1.95rem;
+    strong{
+        display: block;
+        font-weight: $font_bold;
+        font-size: 3rem;
+    }
+    &.text-primary{
+        color: $primary_color !important;
+    }
+}
+
+.fs85rem{
+    font-size: .85rem;
+}
+.blog__categories__list{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+        padding: 0 5px 0 1px;
+        &:not(:last-child){
+            border-right: 1px solid $gray;
+        }
+        a{
+            text-transform: uppercase;
+            font-size: .85rem;
+            &:hover{
+                color: $primary_light;
+            }
+        }
+    }
+}
+
+ul.pagination{
+    justify-content: center;
+    .page-item{
+        margin: 0 2px;
+        .page-link{
+            border: none;
+            background: $tags_aux;
+            color: $white;
+            font-family: $secondary_font;
+            border-radius: 0;
+            display: flex;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: 1.3rem;
+
+            &:hover{
+                background: $paragraphs_aux;
+            }
+        }
+
+        &.disabled,
+        &.disabled{
+            .page-link{
+                background: rgba($tags_aux, .5);
+            }
+        }
+
+        &.active,
+        &.active{
+            .page-link{
+                background: $paragraphs_aux;
+            }
+        }
+        &:first-child,
+        &:last-child{
+            .page-link{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.article__header{
+    position: relative;
+    .article__header--img{}
+    .article__header--overlay{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 50px 20px;
+        background: rgba($tags_aux, .8);
+
+        h1{
+            color: $primary_color;
+            font-weight: $font-bold;
+            margin: 0;
+        }
+
+        .aho_link,
+        .aho_date{
+            color: $primary_color;
+            font-weight: $font-light;
+        }
+
+        .aho_link{
+            font-size: 1.5rem;
+        }
+        .aho_date{
+            font-size: .85rem;
+        }
+    }
+}
+
+#blog_article--content{
+    img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    p{
+        font-family: $primary_font;
+        font-weight: $font-light;
+        line-height: 150%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.sidebar{
+    .sidebar--title{
+        display: block;
+        width: 100%;
+        padding: 5px;
+        font-weight: $font-bold;
+        color: $brand_blue_middle;
+        background: $tags_aux;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .sidebar__list{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2rem;
+        list-style: none;
+        .sidebar__list__item{
+            text-align: right;
+        }
+    }
+}
+
+.contact-form{
+    label{
+        font-weight: $font-bold;
+        color: $secondary_color;
+    }
+
+    input, textarea{
+        background: rgba($form_gray, .05);
+        border: none;
+    }
+
+    /* CSS */
+    .button-19 {
+        background-color: $secondary_color;
+        border: solid transparent;
+        border-radius: 6px;
+        border-width: 0 0 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        letter-spacing: .8px;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 10px 12px;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transform: translateZ(0);
+        transition: filter .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 100%;
+
+        &:after {
+            background-clip: padding-box;
+            background-color: $primary_palid;
+            border: solid transparent;
+            border-radius: 6px;
+            border-width: 0 0 4px;
+            bottom: -4px;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        &:main,
+        &:focus {
+            user-select: auto;
+        }
+
+        &:hover:not(:disabled) {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+
+        &:disabled {
+            cursor: auto;
+        }
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- ---
+| FOOTER
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+@import 'partials/footer';

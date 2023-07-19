@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="10.0.2.79" id="da3b536a-0b3d-4a63-8ef3-9b31ec5417c0" keyPath="$PROJECT_DIR$/../../Documentos/CPA Vision/Lores_kp.ppk" port="22" nameFormat="DESCRIPTIVE" username="devftp" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

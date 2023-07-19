@@ -1,0 +1,64 @@
+@mixin ease($delay: .5s) {
+    -webkit-transition: all $delay ease-in-out;
+    -moz-transition: all $delay ease-in-out;
+    -ms-transition: all $delay ease-in-out;
+    -o-transition: all $delay ease-in-out;
+    transition: all $delay ease-in-out;
+}
+
+@mixin boxshadow($color: rgba($black, .3), $right: 2px, $down: 2px, $spread: 6px, $blur: 2px)
+{
+    -webkit-box-shadow: $right $down $spread $blur $color;
+    box-shadow: $right $down $spread $blur $color;
+}
+
+@mixin filtershadow($color: rgba($black, .3), $right: 2px, $down: 2px, $spread: 6px)
+{
+    -webkit-filter: drop-shadow( $right $down $spread $color);
+    filter: drop-shadow( $right $down $spread $color);
+}
+
+@mixin scrollbar()
+{
+    /* width */
+    ::-webkit-scrollbar {
+        height: 6px;
+        width: 8px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $secondary;
+        border-radius: 4px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $primary;
+        border-radius: 4px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: lighten($primary, 10%);
+    }
+}
+
+@mixin condesedfont()
+{
+    transform: scale(.8,1);
+}
+
+@mixin iconizer()
+{
+    display: inline-block;
+    font-family: "bootstrap-icons" !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+}
+
+@mixin linear_gradient_3($from: #E1F3E0, $to: #009BEB)
+{
+    background: linear-gradient(270deg, $from 0%, $to 50%, $from 100%);
+}

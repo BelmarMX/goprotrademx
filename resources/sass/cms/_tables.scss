@@ -1,0 +1,99 @@
+.table-responsive{
+    //min-height: 290px;
+}
+table.table{
+    thead{
+        tr{
+            th, td{
+                font-size: .7rem;
+                color: rgba($gray, .5);
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                color: $slate-600;
+                font-size: .85rem;
+                vertical-align: middle;
+
+                strong{
+                    display: block;
+                    font-weight: $font-bold;
+                    color: $slate-800;
+
+                    &.small{
+                        font-size: .75rem;
+                        color: $slate-500;
+                    }
+                }
+                small{
+                    font-size: .75rem;
+                    font-weight: $font-light;
+                }
+
+                span.pill-status{
+                    color: $white;
+                    padding: .25rem;
+                    font-size: .6rem;
+                    font-weight: $font-bold;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    display: inline-block;
+                    min-width: 78px;
+                    line-height: 100%;
+                    @include boxshadow(rgba($gray, .25), 0, 2px, 6px, 0);
+                }
+
+                span.pill-active{
+                    background: $success;
+                }
+                span.pill-inactive{
+                    background: $danger;
+                }
+                span.pill-waiting{
+                    background: $warning;
+                }
+
+                span.tags{
+                    background: rgba($secondary_color, .5);
+                    color: $white;
+                    padding: .25rem;
+                    font-size: .6rem;
+                    font-weight: $font-bold;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border-radius: 3px;
+                    display: inline-block;
+                    line-height: 100%;
+                    margin: 2px;
+                }
+
+                &.estatus{
+                    text-align: center;
+                }
+
+                &.date{
+                    text-align: right;
+                    font-size: .75rem;
+                }
+
+                &.actions{
+                    text-align: right;
+                    .btn{
+                        margin: 2px;
+                        line-height: inherit !important;
+                        padding: 2px 6px;
+                        i{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    tfoot{}
+}

@@ -1,0 +1,89 @@
+aside{
+    //position: fixed;
+    background: rgba(15, 23, 42, 1);
+    height: calc(100vh - 126px);
+    border-radius: 6px;
+    @include box-shadow();
+    /* width */
+    ::-webkit-scrollbar {
+        height: 6px;
+        width: 8px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $primary;
+        border-radius: 4px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $blue_light;
+        border-radius: 4px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: lighten($blue_light, 10%);
+    }
+
+    #aside__menu{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-top: 1.5rem;
+        overflow-y: auto;
+        font-size: .9rem;
+        max-height: 100%;
+
+        li{
+            font-weight: $font-light;
+            &.aside__title{
+                color: $blue_light;
+                font-weight: $font-bold;
+                font-size: .7rem;
+                text-transform: uppercase;
+            }
+            &.aside__link{
+                background: rgba($slate, 0);
+                padding: .15rem .5rem;
+                border-radius: 6px;
+                margin-bottom: .35rem;
+
+                & + a.active{
+                    background: rgba($slate, .1);
+                }
+                a{
+                    i.bi{
+                        font-size: 20px;
+                        color: $primary_color;
+                        margin-right: 5px;
+                    }
+                    color: $slate;
+
+                    &.active{
+                        i{
+                            color: $blue_light;
+                        }
+                        color: $blue_light;
+                        font-weight: $font-bold;
+                    }
+                }
+
+                &:hover{
+                    background: rgba($slate, .15);
+                    a{
+                        text-decoration: none;
+                        color: $blue_light;
+                    }
+                }
+            }
+            &.aside__division{
+                padding-top: 20px;
+                border-bottom: 1px solid rgba($primary_color, .5);
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &.nav-collapsed{
+        display: none;
+    }
+}

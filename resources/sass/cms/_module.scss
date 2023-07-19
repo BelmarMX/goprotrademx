@@ -1,0 +1,43 @@
+.module{
+    background: $white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    @include boxshadow(rgba($gray, .15), 0, 6px, 10px, 4px);
+
+    .module__head{
+        background: $blue_deep;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: -38px;
+        @include boxshadow(rgba($gray, .15), 0, 2px, 6px, 2px);
+
+        .module__head--title{
+            color: $slate;
+            text-transform: uppercase;
+            font-size: 1rem !important;
+            margin: 0;
+        }
+        .module__head__actions{
+        }
+    }
+    .module__body{}
+    .module__foot{
+        border-top: 1px solid rgba($gray, .05);
+        padding-top: 1rem;
+        text-align: right;
+    }
+
+
+    button{
+        font-size: .7rem !important;
+        line-height: 168% !important;
+        text-transform: uppercase;
+        i{
+            font-size: 18px;
+        }
+    }
+}

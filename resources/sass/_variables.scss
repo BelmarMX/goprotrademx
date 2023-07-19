@@ -1,0 +1,48 @@
+// Site web fonts
+$primary_font:      'Poppins', sans-serif;
+$secondary_font:    'Poppins', sans-serif;
+$auxiliar_font:     'Poppins', sans-serif;
+$font_thin:         100;
+$font_light:        300;
+$font_regular:      400;
+$font_medium:       700;
+$font_bold:         700;
+$font_extra:        700;
+$text-small:        .85rem;
+$text-normal:       1rem;
+$text-big:          2rem;
+$text-bigger:       3rem;
+
+// Colors
+$white:             #FFFFFF;
+$black:             #485166;
+$gray:              #C4C4C4;
+$gray_light:        #F2F2F2;
+$primary_color:     #0050B7;
+$primary_light:     #00AEEF;
+$primary_palid:     #205BA8;
+$secondary_color:   #4CBF82;
+$dark_aux:          #485166;
+$paragraphs_aux:    #485166;
+$tags_aux:          #EBF5FB;
+$brand_blue_middle: #60A4CB;
+$brand_blue_light:  #C7EDF9;
+$form_gray:         #374151;
+
+
+// Bootstrap Override Variables
+:root{
+    --bs-body-font-family: var($primary_font);
+}
+
+$body-color:        $dark_aux;
+$primary:           $primary_color;
+$secondary:         $secondary_color;
+$success:           #22c55e;
+$info:              #0ea5e9;
+$warning:           #f59e0b;
+$danger:            #ef4444;
+$light:             $gray_light;
+$dark:              $dark_aux;
+$tooltip-bg:        $dark_aux !default;
+$spacer:            1.65rem;

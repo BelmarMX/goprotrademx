@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="21edb126-e714-4044-9fbd-ab9c420bcca7" name="solucionesmoca.com" url="http://solucionesmoca.com">
+        <fileTransfer host="solucionesmoca.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="931cdc91-f672-4c34-b803-085f828cd8bf" name="respond (project level)" url="http://respond.cpavision.mx/respond">
+        <fileTransfer rootFolder="/var/www/html/respond" accessType="SFTP" host="10.0.2.79" port="22" sshConfigId="da3b536a-0b3d-4a63-8ef3-9b31ec5417c0" sshConfig="devftp@10.0.2.79:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

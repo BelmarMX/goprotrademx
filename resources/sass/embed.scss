@@ -1,0 +1,27 @@
+@import "variables";
+
+#galeria{
+    padding: 20px;
+    background: $dark;
+
+    .carousel-caption
+    {
+        background: $dark;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        h5{
+            font-family: $secondary_font;
+            color: $tags_aux;
+            font-size: 2rem;
+            text-align: left;
+        }
+        p{
+            color: $white;
+            text-align: left;
+            font-weight: $font-light;
+            font-size: 14px;
+        }
+    }
+}

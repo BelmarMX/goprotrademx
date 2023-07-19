@@ -1,0 +1,57 @@
+// Site web fonts
+$primary_font:      'Roboto', sans-serif;
+$secondary_font:    'Roboto', sans-serif;
+$font_thin:         300;
+$font_light:        300;
+$font_regular:      400;
+$font_medium:       500;
+$font_bold:         700;
+$font_extra:        800;
+$text-small:        .85rem;
+$text-normal:       1rem;
+$text-big:          2rem;
+$text-bigger:       3rem;
+
+// Colors
+$white:             #FFFFFF;
+$black:             #141212;
+$gray:              #1f2937;
+$gray_light:        #cbd5e1;
+$primary_color:     #64748b;
+$primary_light:     #94a3b8;
+$secondary_color:   #701a75;
+$background:        #f0f2f5;
+// Tailwind colors
+$blue_deep:         #0f172a;
+$blue_light:        rgb(56, 189, 248);
+$slate:             rgb(226, 232, 240);
+$tw_text:           rgb(148, 163, 184);
+
+$slate-50:          #f8fafc;
+$slate-100:         #f1f5f9;
+$slate-200:         #e2e8f0;
+$slate-300:         #cbd5e1;
+$slate-400:         #94a3b8;
+$slate-500:         #64748b;
+$slate-600:         #475569;
+$slate-700:         #334155;
+$slate-800:         #1e293b;
+$slate-900:         #0f172a;
+
+
+// Bootstrap Override Variables
+:root{
+    --bs-body-font-family: var($primary_font);
+}
+
+$body-color:        $secondary_color;
+$primary:           $primary_color;
+$secondary:         $secondary_color;
+$success:           #22c55e;
+$info:              #0ea5e9;
+$warning:           #f59e0b;
+$danger:            #ef4444;
+$light:             $gray_light;
+$dark:              $black;
+$tooltip-bg:        $gray !default;
+$spacer:            1.65rem;
