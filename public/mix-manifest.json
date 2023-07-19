@@ -1,9 +1,9 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/js/cms.js": "/js/cms.js",
-    "/css/cms.css": "/css/cms.css",
-    "/css/app.css": "/css/app.css",
-    "/css/swal2-admin.css": "/css/swal2-admin.css",
-    "/css/swal2.css": "/css/swal2.css",
-    "/css/embed.css": "/css/embed.css"
+    "/v1/js/app.js": "/v1/js/app.js",
+    "/v1/js/cms.js": "/v1/js/cms.js",
+    "/v1/css/cms.css": "/v1/css/cms.css",
+    "/v1/css/app.css": "/v1/css/app.css",
+    "/v1/css/swal2-admin.css": "/v1/css/swal2-admin.css",
+    "/v1/css/swal2.css": "/v1/css/swal2.css",
+    "/v1/css/embed.css": "/v1/css/embed.css"
 }

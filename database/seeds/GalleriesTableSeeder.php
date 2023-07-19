@@ -11,12 +11,13 @@ class GalleriesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-                'insertion_code' => uniqid('BAN')
-            ,   'type'      => 'mixed'
-            ,   'title'     => 'Banner'
-            ,   'slug'      => 'banner'
-            ,   'summary'   => 'Galería de banners en portada'
+        DB::table('galleries')->insert([
+                'insertion_code'    => uniqid('BAN')
+            ,   'type'              => 'mixed'
+            ,   'title'             => 'Banner'
+            ,   'slug'              => 'banner'
+            ,   'summary'           => 'Galería de banners en portada'
+            ,   'created_at'        => \Carbon\Carbon::now()
         ]);
     }
 }
