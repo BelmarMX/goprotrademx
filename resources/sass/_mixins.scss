@@ -62,3 +62,13 @@
 {
     background: linear-gradient(270deg, $from 0%, $to 50%, $from 100%);
 }
+
+@mixin clip_text($from: #FF6B00, $to: #FFC700)
+{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, from($from), color-stop(30%, lighten($from, 10%)), color-stop(30%, lighten($from, 20%)), color-stop(73%, lighten($to, 15%)), to($to));
+    background-image: -webkit-linear-gradient(left, $from 0%, lighten($from, 10%) 30%, lighten($from, 20%) 30%, lighten($to, 15%) 73%, $to 100%);
+    background-image: -o-linear-gradient(left, $from 0%, lighten($from, 10%) 30%, lighten($from, 20%) 30%, lighten($to, 15%) 73%, $to 100%);
+    background-image: linear-gradient(to right, $from 0%, lighten($from, 10%) 30%, lighten($from, 20%) 30%, lighten($to, 15%) 73%, $to 100%);
+}

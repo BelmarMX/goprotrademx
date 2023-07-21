@@ -1,68 +1,39 @@
+#bg_pattern{
+    background: url('/v1/img/bg_pattern.png') $primary_color;
+    height: 70px;
+}
+
 header{
-    margin-bottom: -50px;
-    nav.navbar{
-        background: url('/images/layout/bg-navbar.png') no-repeat center;
-        background-size: cover;
-        z-index: 1001;
+    background-color: $white;
+    margin-top: -35px;
+    border-radius: 24px;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
 
-        .navbar-nav{
-            min-height: 90px;
-            height: auto;
-            .nav-item{
-                text-transform: uppercase;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-right: 3px;
-                padding-left: 3px;
-                &.active{
-                    background: rgba(#EBF5FB, .8);
-                    a{
-                        color: rgba($primary_light, 1);
-                        font-weight: $font-bold;
-                        &:hover{
-                            color: rgba($primary_light, 1);
-                        }
-                    }
-                }
-
-                .nav-link{
-                    font-size: .9rem;
-                    color: rgba($white, .8);
-                    &:hover{
-                        color: rgba($white, 1);
-                    }
-                }
-            }
-        }
-
-        .rrss{
-            height: 90px;
-            padding-right: 24px;
-            padding-left: 24px;
-            background: rgba(#EBF5FB, 1);
-            color: $primary_light;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    .navbar-nav{
+        li{
+            margin: 0 1.1rem;
+            &.active,
             &:hover{
-                color: $primary;
+                background: url('/v1/img/nav_top.png') no-repeat no-repeat top center;
+            }
+            a{
+                text-transform: uppercase;
+                color: $secondary_color;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.active{
+                    @include clip_text();
+                    font-weight: $font-bold;
+                }
             }
         }
     }
-    .nav__gradient{
-        @include linear_gradient_3();
-        height: 4px;
-    }
-    &:after{
-        content: '';
-        display: block;
-        width: 100vw;
-        height: 100px;
-        background: radial-gradient(50% 50% at 50% 50%, #00AEEF 0%, rgba(255, 255, 255, 0) 100%);
-        opacity: 0.35;
-        margin-top: -50px;
-        z-index: 1000;
+    .elissir{
+        color: #312E81;
+        font-weight: $font-bold;
+        font-size: .85rem;
     }
 }

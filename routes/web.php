@@ -123,23 +123,32 @@ Route::get(
     ,   'NavigationController@article'
 ) -> name('blog-article');
 Route::get(
-        'escribenos'
+        'contact'
     ,   'NavigationController@contact'
-) -> name('escribenos');
+) -> name('contact');
 Route::get(
-        'aviso-privacidad'
+        'privacy-policy'
     ,   'NavigationController@avisoPrivacidad'
-) -> name('aviso-privacidad');
+) -> name('privacy-policy');
 Route::get(
-        'enviado'
+        'sent'
     ,   'NavigationController@enviado'
-) -> name('enviado');
+) -> name('sent');
 Route::get(
-        'gracias'
+        'thanks'
     ,   'NavigationController@gracias'
-) -> name('gracias');
+) -> name('thanks');
 Route::post(
-        'contacto'
+        'contact'
     ,   'NavigationController@mailContact'
-) -> name('mail.contacto');
+) -> name('mail.contact');
+// Pages
+Route::get(
+        'services'
+    ,   'NavigationController@index'
+) -> name('services');
+Route::get(
+        'company'
+    ,   'NavigationController@index'
+) -> name('company');
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */

@@ -1,6 +1,7 @@
 <?php
 namespace App\Helpers;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
 
 class Front
@@ -79,6 +80,10 @@ class Front
         return "$day $month {$dt -> year}";
     }
 
+    /**
+     * @param $url
+     * @return string|null
+     */
     public static function get_yutup_code($url): ?string
     {
         if( Str::contains($url, ['youtube.com', 'youtu.be']) )
@@ -93,5 +98,19 @@ class Front
             return $code;
         }
         return NULL;
+    }
+
+    /**
+     * Comprueba la ruta por la que estamos navegando
+     * @param string $expected
+     * @param string $css_class
+     * @return string
+     */
+    public static function is_route(string $expected = '/', string $css_class = 'active')
+    {
+        return Request::is($expected) || Request::is($expected.'/*')
+            ? $css_class
+            : ''
+        ;
     }
 }

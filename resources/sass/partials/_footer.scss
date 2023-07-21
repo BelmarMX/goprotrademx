@@ -1,16 +1,11 @@
 footer{
-    background: #102134;
-    a{
-        display: block;
-        width: 100%;
-        font-size: $font-bold !important;
-        color: #BED5DE !important;
-    }
+    background: $dark;
+    padding: 2rem;
+    color: $white;
 
-    small{
-        font-weight: $font-light;
-        font-size: 12px;
-        color: #BED5DE;
+    a.a_footer{
+        font-size: .9rem;
+        font-weight: $font-bold;
     }
 }
 
