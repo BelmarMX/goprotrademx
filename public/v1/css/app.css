@@ -22597,6 +22597,13 @@ body {
   margin-left: 112px;
 }
 
+h1.gradient, .gradient.h1 {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
 h2, .h2 {
   text-align: center;
   font-weight: 800;
@@ -22609,6 +22616,9 @@ h2 strong, .h2 strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, #FF6B00 0%, #ff8933 30%, #ffa666 30%, #ffd84d 73%, #FFC700 100%);
+}
+h2.text-start strong, .text-start.h2 strong {
+  text-align: left;
 }
 
 h3, .h3 {
@@ -22640,7 +22650,7 @@ p.small-paragraph-clean {
 }
 
 .col-same-height-386 {
-  min-height: 386px;
+  min-height: 406px;
   position: relative;
 }
 
@@ -22650,7 +22660,8 @@ p.small-paragraph-clean {
   left: calc(50% - 145px);
 }
 
-ul.small li {
+ul.small li,
+ol.small li {
   font-size: 0.9rem;
 }
 

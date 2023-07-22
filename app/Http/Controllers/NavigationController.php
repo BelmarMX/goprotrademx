@@ -30,6 +30,24 @@ class NavigationController extends Controller
         ]);
     }
 
+    public function services()
+    {
+        return view('site.v2.services') -> with([
+                'all_categories'    => parent::get_categories()
+            ,   'lastest'           => parent::lastest_articles(3)
+            ,   'banners'           => parent::get_banners()
+        ]);
+    }
+
+    public function company()
+    {
+        return view('site.v2.company') -> with([
+                'all_categories'    => parent::get_categories()
+            ,   'lastest'           => parent::lastest_articles(3)
+            ,   'banners'           => parent::get_banners()
+        ]);
+    }
+
     public function embed($code)
     {
         return view('site.v2.embebido') -> with([
@@ -37,9 +55,9 @@ class NavigationController extends Controller
         ]);
     }
 
-    public function avisoPrivacidad()
+    public function privacyPolicy()
     {
-        return view('site.v2.aviso-privacidad') -> with([
+        return view('site.v2.privacy-policy') -> with([
                 'all_categories' => parent::get_categories()
         ]);
     }
@@ -73,7 +91,7 @@ class NavigationController extends Controller
             -> orderBy('created_at', 'DESC')
             -> paginate(10);
 
-        return view('site.v2.por-categoria') -> with([
+        return view('site.v2.by-category') -> with([
                 'blog_categories'   => parent::get_categories()
             ,   'lastest'           => parent::lastest_articles(3)
             ,   'record'            => $record
@@ -102,7 +120,7 @@ class NavigationController extends Controller
             -> limit(3)
             -> get();
 
-        return view('site.v2.articulo') -> with([
+        return view('site.v2.article') -> with([
                 'blog_categories'    => parent::get_categories()
             ,   'record'            => $record
             ,   'related'           => $related
@@ -110,18 +128,18 @@ class NavigationController extends Controller
     }
 
     public function contact(){
-        return view('site.v2.contacto', [
+        return view('site.v2.contact', [
             'banners'           => parent::get_banners()
         ]);
     }
 
-    public function gracias(){
-        return view('site.v2.gracias') -> with([
+    public function thanks(){
+        return view('site.v2.thanks') -> with([
                 'all_categories'    => parent::get_categories()
         ]);
     }
-    public function enviado(){
-        return self::gracias();
+    public function sent(){
+        return self::thanks();
     }
 
     public function mailContact(Request $request)

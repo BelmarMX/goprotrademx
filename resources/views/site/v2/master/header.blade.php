@@ -27,7 +27,7 @@
                     </li>
                 </ul>
                 <div>
-                    <span class="elissir">We can help you</span> <a class="link_icon gray" href="mailto:" target="_blank" data-bs-toggle="tooltip" title="email"><i class="bi bi-envelope"></i></a> <a class="link_icon gray" href="https://wa.me/+521" target="_blank" data-bs-toggle="tooltip" title="whatsap"><i class="bi bi-whatsapp"></i></a>
+                    <span class="elissir">We can help you</span> <a class="link_icon gray" href="mailto:" target="_blank" data-bs-toggle="tooltip" title="email"><i class="bi bi-envelope"></i></a> <a class="link_icon gray" href="https://wa.me/+521" target="_blank" data-bs-toggle="tooltip" title="whatsapp"><i class="bi bi-whatsapp"></i></a>
                 </div>
             </div>
         </div>

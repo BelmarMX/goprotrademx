@@ -128,15 +128,15 @@ Route::get(
 ) -> name('contact');
 Route::get(
         'privacy-policy'
-    ,   'NavigationController@avisoPrivacidad'
+    ,   'NavigationController@privacyPolicy'
 ) -> name('privacy-policy');
 Route::get(
         'sent'
-    ,   'NavigationController@enviado'
+    ,   'NavigationController@sent'
 ) -> name('sent');
 Route::get(
         'thanks'
-    ,   'NavigationController@gracias'
+    ,   'NavigationController@thanks'
 ) -> name('thanks');
 Route::post(
         'contact'
@@ -145,10 +145,10 @@ Route::post(
 // Pages
 Route::get(
         'services'
-    ,   'NavigationController@index'
+    ,   'NavigationController@services'
 ) -> name('services');
 Route::get(
         'company'
-    ,   'NavigationController@index'
+    ,   'NavigationController@company'
 ) -> name('company');
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */

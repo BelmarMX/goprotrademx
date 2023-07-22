@@ -1,7 +1,7 @@
 @extends('site.v2.master.app')
 
-@section('title', 'Welcome!')
-@section('description', 'You can trust our People, Expertise and Services to Simplify your Customs and Logistics Processes.')
+@section('title', 'Privacy Policy')
+@section('description', '')
 @section('image', asset('v1/img/nearshoring.png'))
 
 @section('content')
