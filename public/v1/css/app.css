@@ -22518,6 +22518,12 @@ hr {
   font-size: 0.7rem;
 }
 
+.btn.btn-secondary {
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
 /* --- --- --- --- --- --- --- --- --- ---
 | HEADER
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
@@ -22597,6 +22603,10 @@ body {
   margin-left: 112px;
 }
 
+h1.font-bold, .font-bold.h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
 h1.gradient, .gradient.h1 {
   font-weight: 800;
   margin-bottom: 0.5rem;
@@ -22663,6 +22673,98 @@ p.small-paragraph-clean {
 ul.small li,
 ol.small li {
   font-size: 0.9rem;
+}
+
+.blog__categories_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.blog__categories_list li {
+  border-bottom: 1px solid #C4C4C4;
+  padding: 5px;
+}
+.blog__categories_list li a {
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #C4C4C4;
+}
+.blog__categories_list li a:hover {
+  color: #454545;
+}
+.blog__categories_list li.active a {
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #FF6B00 0%, #ff8933 30%, #ffa666 30%, #ffd84d 73%, #FFC700 100%);
+}
+
+.blog__summary .blog__thumb_image {
+  opacity: 0.5;
+}
+.blog__summary:hover .blog__thumb_image {
+  opacity: 1;
+}
+
+.blog__thumb_image {
+  border-radius: 20px;
+}
+
+.blog__summary_category-title {
+  text-transform: uppercase;
+  color: #E4B04B;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.blog__summary--date {
+  font-size: 0.85rem;
+  color: #C4C4C4;
+}
+
+.blog__summary--title {
+  font-size: 1rem;
+  margin: 0;
+  color: #171C23;
+}
+
+.blog__summary--text {
+  color: #171C23;
+}
+
+.pipe {
+  color: #C4C4C4;
+  font-weight: 300;
+  opacity: 0.35;
+  margin: 0 12px;
+}
+
+.blog--content p {
+  font-size: 0.875rem;
+  line-height: 175%;
+  color: #171C23;
+}
+
+.blog--content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- --- --- --- --- --- --- --- --- ---
+| CONTACT FORM
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+form .form-group label {
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.9rem;
+}
+form .form-group input, form .form-group textarea, form .form-group select {
+  border: none;
+  background: rgba(55, 65, 81, 0.05);
+  font-weight: 300;
+  font-size: 0.75rem;
+  padding: 0.65rem;
 }
 
 /* --- --- --- --- --- --- --- --- --- ---

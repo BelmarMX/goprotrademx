@@ -6,7 +6,7 @@
 
 @section('content')
     <section id="main" class="container mb-5">
-        <h1>We want to hear about you<strong>Get in touch with us</strong></h1>
+        <h1 class="text-center font-bold text-uppercase mb-4">We want to hear about you<br><strong class="gradient">Get in touch with us</strong></h1>
 
         <div class="row">
             <div class="col-md-6">
@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group mb-2">
-                                <label for="nombre">Complete Name</label>
+                                <label for="nombre">Complete name</label>
                                 <input name="nombre" class="form-control" type="text" placeholder="John Doe" required>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                             <div class="g-recaptcha" data-sitekey="{{ env('APP_ENV') == 'local' ? env('SB_CAPTCHA_PUBLIC') : env('CAPTCHA_PUBLIC') }}"></div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-secondary">Send form</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send form</button>
                         </div>
                     </div>
                 </form>

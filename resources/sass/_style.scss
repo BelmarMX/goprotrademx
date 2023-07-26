@@ -50,6 +50,11 @@ hr{
     text-transform: uppercase;
     font-size: .7rem;
 }
+.btn.btn-secondary{
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
 
 /* --- --- --- --- --- --- --- --- --- ---
 | HEADER
@@ -87,6 +92,10 @@ body{
 }
 
 h1{
+    &.font-bold{
+        font-size: 2rem;
+        font-weight: $font-bold;
+    }
     &.gradient{
         font-weight: $font-extra;
         margin-bottom: .5rem;
@@ -158,6 +167,83 @@ ol.small{
         font-size: .9rem;
     }
 }
+
+.blog__categories_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+        border-bottom: 1px solid $gray;
+        padding: 5px;
+        a{
+            font-size: .75rem;
+            font-weight: $font-light;
+            text-transform: uppercase;
+            color: $gray;
+            &:hover{
+                color: darken($gray, 50%);
+            }
+        }
+        &.active{
+            a{
+                font-weight: $font-bold;
+                @include clip_text();
+            }
+        }
+    }
+}
+
+.blog__summary{
+    .blog__thumb_image{
+        opacity: .5;
+    }
+    &:hover{
+        .blog__thumb_image{
+            opacity: 1;
+        }
+    }
+}
+.blog__thumb_image{
+    border-radius: 20px;
+}
+.blog__summary_category-title{
+    text-transform: uppercase;
+    color: $primary;
+    font-size: .75rem;
+    font-weight: $font-bold;
+}
+.blog__summary--date{
+    font-size: .85rem;
+    color: $gray;
+}
+.blog__summary--title{
+    font-size: 1rem;
+    margin: 0;
+    color: $dark;
+}
+.blog__summary--text{
+    color: $dark;
+}
+.pipe{
+    color: $gray;
+    font-weight: $font-light;
+    opacity: .35;
+    margin: 0 12px;
+}
+.blog--content p{
+    font-size: .875rem;
+    line-height: 175%;
+    color: $dark;
+}
+.blog--content img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- --- --- --- --- --- --- --- --- ---
+| CONTACT FORM
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+@import 'partials/forms';
 
 /* --- --- --- --- --- --- --- --- --- ---
 | FOOTER

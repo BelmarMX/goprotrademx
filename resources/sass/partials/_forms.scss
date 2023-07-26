@@ -1,0 +1,16 @@
+form{
+    .form-group{
+        label{
+            font-weight: $font-bold;
+            color: $black;
+            font-size: .9rem;
+        }
+        input, textarea, select{
+            border: none;
+            background: rgba(#374151, .05);
+            font-weight: $font-light;
+            font-size: .75rem;
+            padding: .65rem;
+        }
+    }
+}

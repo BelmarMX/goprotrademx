@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Storage;
 
 class NavigationController extends Controller
 {
+    const ARTICLES_PER_PAGE = 12;
+
     public function __construct()
     {
         $this -> send		= array();
@@ -68,7 +70,7 @@ class NavigationController extends Controller
             -> where('published_at', '<=', Carbon::now())
             -> orderBy('published_at', 'DESC')
             -> orderBy('created_at', 'DESC')
-            -> paginate(10);
+            -> paginate(self::ARTICLES_PER_PAGE);
 
         return view('site.v2.blog') -> with([
                 'entries'           => $entries
@@ -89,7 +91,7 @@ class NavigationController extends Controller
             -> where('category_id', $record -> id)
             -> orderBy('published_at', 'DESC')
             -> orderBy('created_at', 'DESC')
-            -> paginate(10);
+            -> paginate(self::ARTICLES_PER_PAGE);
 
         return view('site.v2.by-category') -> with([
                 'blog_categories'   => parent::get_categories()

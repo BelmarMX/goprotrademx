@@ -15,206 +15,54 @@
     </div>
 
     <section id="main" class="container mb-5">
-        <div class="row">
-            <div class="col-md-4 text-center mb-3">
-                <i class="fa-solid big-60 fa-check-to-slot mb-2"></i>
-                <h2>Trade with <strong>confidence</strong></h2>
-                <p class="small-paragraph-clean">
-                    Our local Experts help you establish and maintain Trade Compliance Programs, meet Audit Requirements and manage Trade Security Agenda.
-                </p>
-            </div>
-            <div class="col-md-4 text-center mb-3">
-                <i class="fa-solid big-60 fa-chess-knight mb-2"></i>
-                <h2>Trade <strong>strategically</strong></h2>
-                <p class="small-paragraph-clean">
-                    Nearshoring reduce Cost and Times in your Supply Chain; take advantage of the GoPro Trade & Logistics Control Tower Experts and Services and focus in what is most convenient to you Company.
-                </p>
-            </div>
-            <div class="col-md-4 text-center mb-3">
-                <i class="fa-solid big-60 fa-seedling mb-2"></i>
-                <h2>Grow your <strong>business</strong></h2>
-                <p class="small-paragraph-clean">
-                    We arm your Trade & Logistics Team to connect and work within our GoProTrade Control Tower Programs and Professionals according to your import or export needs; setting up the correct processes and controls to enhance and improve your supply chain! Let you import & export worry free!
-                </p>
-            </div>
-            <div class="col-md-8 offset-md-2 text-center mb-3">
-                <i class="fa-solid big-60 fa-tower-observation mb-2"></i>
-                <h2><strong>Foreign trade management and control</strong> Tower Service Solutions</h2>
-                <p class="small-paragraph-clean">
-                    Import & Export from Mexico is becoming more complex. Our Trade and Logistics Experts set compliance programs; identifying risks as well opportunities for cost savings and process improvements.
-                </p>
-            </div>
-        </div>
-    </section>
+        <h1 class="gradient">@yield('title')</h1>
 
-    <section id="main-services" class="container mb-5">
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6 order-1">
-                <h3>Operations & Logistics Adminstration Control Tower</h3>
-                <p class="small-paragraph-clean">
-                    GoProTrade has developed a Control Tower that provides knowledge on the best practices for the administration of import / export operations, adhering to the applicable regulations on different issues related to foreign trade.
+        <div class="row align-items-center mb-5">
+            <div class="col-12 mb-5 editor-content font-14">
+                <small>Actualización: {{ env('AVP_DATE') }}</small>
+                <p>
+                    El aviso de privacidad forma parte del uso del sitio web en el que se esté accediendo.
                 </p>
-                <p class="small-paragraph-clean">
-                    Acting as an interface between suppliers and our clients; we leverage our expertise, organization and processes necessary to help you coordinate your import and export operations. We set up a team –in house- to attend only to your requirements; in coordination with T&L control tower.
+                <h2 class="text-start">Responsable</h2>
+                <p class="text-justify">
+                    Usted podrá contactar a <strong>{{ env('AVP_NAME') }}</strong> por medio del correo electrónico: {{ env('AVP_MAIL') }}. Una de las prioridades de <strong>{{ env('AVP_NAME') }}</strong> es respetar la privacidad de sus usuarios y mantener segura la información y los datos personales que recolecta. Así mismo, <strong>{{ env('AVP_NAME') }}</strong> informará al usuario qué tipo de datos recolecta, cómo los almacena, la finalidad del archivo,cómo los protege, el alcance de su compromiso de confidencialidad y los derechos que éste posee como titular de la información.
                 </p>
-                <p class="small-paragraph-clean">
-                    Reduce costs and manage your Trade Compliance Processes and Programs!
+                <h2 class="text-start">Datos personales</h2>
+                <p class="text-justify">
+                    En <strong>{{ env('AVP_NAME') }}</strong> recogemos información desde varias áreas de nuestros sitios web. Para cada uno de estos sitios, la información que se solicita es distinta y se almacena en bases de datos separadas. La información deberá ser veraz y completa. El usuario responderá en todo momento por los datos proporcionados y en ningún caso <strong>{{ env('AVP_NAME') }}</strong> será responsable de los mismos. Entre la información solicitada al usuario, se encuentra: Nombre, estado, ciudad, empresa, teléfono, correo electrónico, áreas de Interes, etc.
                 </p>
-                <div class="text-center my-3">
-                    <img width="249" height="61" class="img-fluid" src="{{ asset('v1/img/services/immex.png') }}" alt="IMMEX">
-                </div>
-                <p class="small-paragraph-clean">
-                    Temporarily import raw materials, parts and components into Mexico for assembly within a set time frame without paying applicable duties. We help you save time and money by keeping track of changing regulations to establish and maintain your IMMEX obligations.
+                <h2 class="text-start">Qué son las cookies y como se utilizan</h2>
+                <p class="text-justify">
+                    Los cookies son pequeñas piezas de información que son enviadas por el sitio Web a su navegador y se almacenan en el disco duro de su equipo y se utilizan para determinar sus preferencias cuando se conecta a los servicios de nuestros sitios, así como para rastrear determinados comportamientos o actividades llevadas a cabo por usted dentro de nuestros sitios. En algunas secciones de nuestro sitio requerimos que el cliente tenga habilitados los cookies ya que algunas de las funcionalidades requieren de éstas para trabajar. Los cookies nos permiten: a) reconocerlo al momento de entrar a nuestros sitios y ofrecerle de una experiencia personalizada, b) conocer la configuración personal del sitio especificada por usted, por ejemplo, los cookies nos permiten detectar el ancho de banda que usted ha seleccionado al momento de ingresar al home page de nuestros sitios, de tal forma que sabemos qué tipo de información es aconsejable descargar, c) calcular el tamaño de nuestra audiencia y medir algunos parámetros de tráfico, pues cada navegador que obtiene acceso a nuestros sitios adquiere un cookie que se usa para determinar la frecuencia de uso y las secciones de los sitios visitadas, reflejando así sus hábitos y preferencias, información que nos es útil para mejorar el contenido, los titulares y las promociones para los usuarios. Los cookies también nos ayudan a rastrear algunas actividades, por ejemplo, en algunas de las encuestas que lanzamos en línea, podemos utilizar cookies para detectar si el usuario ya ha llenado la encuesta y evitar desplegarla nuevamente, en caso de que lo haya hecho. Sin embargo, las cookies le permitirán tomar ventaja de las características más benéficas que le ofrecemos, por lo que le recomendamos que las deje activadas. La utilización de cookies no será utilizada paraidentificar a los usuarios, con excepción de los casos en que se investiguen posibles actividades fraudulentas.
                 </p>
-                <p class="small-paragraph-clean">
-                    Take advantage of your IMMEX program! & avoid cancellation issues!
+                <h2 class="text-start">Uso de la información</h2>
+                <p class="text-justify">
+                    La información solicitada permite a <strong>{{ env('AVP_NAME') }}</strong> contactar a los usuarios y potenciales clientes, cuando sea necesario para completar los procedimientos de de compra, así como contactar a los usuarios. Así mismo <strong>{{ env('AVP_NAME') }}</strong> utilizará la información obtenida para: Procurar un servicio eficiente Informar sobre nuevos productos o servicios que estén relacionados con el contratado o adquirido por el cliente. Dar cumplimiento a obligacionescontraídas con nuestros clientes. Informar sobre cambios de nuestros productos o servicios. Proveer una mejor atención al usuario.
                 </p>
-            </div>
-            <div class="col-md-6 order-0 text-center mb-3">
-                <img width="547" height="531" class="img-fluid" src="{{ asset('v1/img/services/aux-01.png') }}" alt="Operations & Logistics Adminstration Control Tower">
-            </div>
-        </div>
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6 order-1 order-md-0">
-                <h3>Authorized Economic Operator AEO (OEA)</h3>
-                <p class="small-paragraph-clean">
-                    Mexico AEO certification constitutes proof of organizational health and process integrity. We guide you through self-assessment, application and operation so your business can benefit from OEA.
+                <h2 class="text-start">Limitación de uso y divulgación de la información</h2>
+                <p class="text-justify">
+                    En nuestro programa de notificación de promociones, ofertas y servicios a través de correo electrónico, sólo <strong>{{ env('AVP_NAME') }}</strong> tiene acceso a la información recabada. Este tipo de publicidad se realiza mediante avisos y mensajes promocionales de correo electrónico, los cuales sólo serán enviados a usted y a aquellos contactos registrados para tal propósito, esta indicación podrá usted modificarla en cualquier momento. En los correos electrónicos enviados, pueden incluirse ocasionalmente ofertas de terceras partes que sean nuestros socios comerciales. En el caso de empleo de cookies, el botón de "ayuda" que se encuentra en la barra de herramientas de la mayoría de los navegadores, le dirá cómo evitar aceptar nuevos cookies, cómo hacer que elnavegador le notifique cuando recibe un nuevo cookie o cómo deshabilitar todos los cookies.
                 </p>
-                <p class="small-paragraph-clean">
-                    Work in a simplified and secure process!
+                <h2 class="text-start">Derechos Arco</h2>
+                <p class="text-justify">
+                    En este apartado se deberán especificar los medios que el responsable pone a disposición de los titulares para ejercer sus derechos ARCO. Los datos personales proporcionados por el usuario formarán parte de un archivo que contendrá su perfil. El usuario puede solicitar modificar su perfil en cualquier momento enviándonos un correo a: {{ env('AVP_MAIL') }}.
+                    Asimismo podrá notificarnos la oposición al uso de sus datos personales o la cancelación del tratamiento de información y la cancelación de su expediente, por los mismos medios o comunicándose al teléfono {{ env('AVP_PHONE') }}, <strong>{{ env('AVP_NAME') }}</strong> aconseja al usuario que actualice sus datos cada vez que éstos sufran alguna modificación, ya que esto permitirá brindarle un servicio más personalizado.
                 </p>
-            </div>
-            <div class="col-md-6 order-0 order-md-1 text-center mb-3">
-                <img width="547" height="531" class="img-fluid" src="{{ asset('v1/img/services/aux-02.png') }}" alt="Authorized Economic Operator AEO (OEA)">
-            </div>
-        </div>
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6 order-1">
-                <h3>Trade Security Services (TSS)</h3>
-                <p class="small-paragraph-clean">
-                    Companies that import or export needs to have Knowledge, Controls, Processes, Training, Reviews and Audits to allow minimize risks for not complying with applicable regulations; fraud prevention and forced labor policies.
+                <h2 class="text-start">Transferencia de información con terceros</h2>
+                <p class="text-justify">
+                    <strong>{{ env('AVP_NAME') }}</strong> únicamente realiza transferencias de información con las empresas de webhosting con las que mantiene una relación jurídica vigente para poder mantener, actualizar y administrar sus sitios web, a través de los que informa a sus clientes, contratantes y usuarios sobre actividades,promociones, eventos y estudios.
                 </p>
-                <p class="small-paragraph-clean">
-                    In GoProTrade we can work to arm your Trade Agenda!
+                <p class="text-justify">
+                    Se debe aclarar que ninguna transmisión por Internet puede garantizar su seguridad al 100%, por lo tanto, aunque nos esforcemos en proteger su información personal, no se puede asegurar ni garantizar la seguridad de la transmisión de ninguna información. Una vez recibidos los datos, haremos todo lo posible por salvaguardar la información en nuestro servidor.
                 </p>
-                <p class="small-paragraph-clean">
-                    Trade with Confidence! Strategically! To Growth your Business!
+                <h2 class="text-start">Cambios en el aviso de privacidad</h2>
+                <p class="text-justify">
+                    Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad, para la atención de novedades legislativas o jurisprudenciales, políticas internas, nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos y prácticas del mercado. Estas modificaciones estarán disponibles al público a través de los siguientes medios: en nuestra sitio de Internet {{ env('APP_URL')}} en la sección aviso de privacidad y/o se las haremos llegar al último correo electrónico que nos haya proporcionado.
                 </p>
-            </div>
-            <div class="col-md-6 order-0 text-center mb-3">
-                <img width="547" height="531" class="img-fluid" src="{{ asset('v1/img/services/aux-03.png') }}" alt="Trade Security Services (TSS)">
-            </div>
-        </div>
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6 order-1 order-md-0">
-                <h3>Americas Samples Management, Demos & Prototypes</h3>
-                <p class="small-paragraph-clean">
-                    Sample management is a part of process control, one of the essentials of a quality management system. The quality of the work a laboratory produces is only as good as the quality of the samples it uses for testing; the right process in his deployment, use, distribution and end of life (EOL) processes can prevent to risk IP and other legal issues.
+                <h2 class="text-start">Aceptación de los términos</h2>
+                <p class="text-justify">
+                    Esta declaración de Confidencialidad / Privacidad está sujeta a los términos y condiciones de del sitio web de <strong>{{ env('AVP_NAME') }}</strong> antes descritos, lo cual constituye un acuerdo legal entre el usuario y <strong>{{ env('AVP_NAME') }}</strong> Si el usuario utiliza los servicios de <strong>{{ env('AVP_NAME') }}</strong> o de alguno de sus asociados, significa que ha leído, entendido y acordado los términos antes expuestos. Si no está de acuerdo con ellos, el usuario no deberá proporcionar ninguna información personal, ni utilizar los servicios de los sitios de <strong>{{ env('AVP_NAME') }}</strong>.
                 </p>
-                <p class="small-paragraph-clean">
-                    In GoProTrade we can handled your Samples, Demos and Prototypes!
-                </p>
-            </div>
-            <div class="col-md-6 order-0 order-md-1 text-center mb-3">
-                <img width="547" height="531" class="img-fluid" src="{{ asset('v1/img/services/aux-04.png') }}" alt="Americas Samples Management, Demos & Prototypes">
-            </div>
-        </div>
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6 order-1">
-                <h3>Solutions that work together!<br>Import & Export with the Experts!</h3>
-                <p class="small-paragraph-clean">
-                    <strong>Trade Compliance within a Cost Saving Environment!</strong><br>
-                    The increasing of your import & export operations reflects more complexity in your supply chain. In GoProTrade we have services your company needs to keep your import & export shipments moving from Mexico on time and in compliance.
-                </p>
-            </div>
-            <div class="col-md-6 order-0 text-center mb-3">
-                <img width="547" height="531" class="img-fluid" src="{{ asset('v1/img/services/aux-05.png') }}" alt="Import & Export with the Experts">
-            </div>
-        </div>
-    </section>
-
-    <section id="main-features" class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-3 mb-4 col-same-height-386">
-                <h4 class="gradient">Exporter</h4>
-                <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-01.png') }}" alt="Exporter">
-                </div>
-                <ul class="small">
-                    <li>Document management</li>
-                    <li>Restricted party screening</li>
-                    <li>Export classification</li>
-                    <li>Export controls</li>
-                </ul>
-                <img width="290" height="18" class="img-fluid pos-abs-bottom-0" src="{{ asset('v1/img/services/footer.png') }}" alt="division line">
-            </div>
-            <div class="col-md-3 mb-4 col-same-height-386">
-                <h4 class="gradient">Secure Transportation and Documentation</h4>
-                <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-02.png') }}" alt="Secure Transportation and Documentation">
-                </div>
-                <ul class="small">
-                    <li>Freight booking and pre-shipment process</li>
-                    <li>Carrier management</li>
-                    <li>Shipment tracking</li>
-                    <li>P.O. management</li>
-                    <li>Determination of licenses and permits</li>
-                </ul>
-                <img width="290" height="18" class="img-fluid pos-abs-bottom-0" src="{{ asset('v1/img/services/footer.png') }}" alt="division line">
-            </div>
-            <div class="col-md-3 mb-4 col-same-height-386">
-                <h4 class="gradient">Shipping</h4>
-                <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-03.png') }}" alt="Shipping">
-                </div>
-                <ul class="small">
-                    <li>Ocean freight</li>
-                    <li>LCL express services</li>
-                    <li>Air freight</li>
-                    <li>Ground freight</li>
-                </ul>
-                <img width="290" height="18" class="img-fluid pos-abs-bottom-0" src="{{ asset('v1/img/services/footer.png') }}" alt="division line">
-            </div>
-            <div class="col-md-3 mb-4 col-same-height-386">
-                <h4 class="gradient">Customs</h4>
-                <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-04.png') }}" alt="Customs">
-                </div>
-                <ul class="small">
-                    <li>Mexican custom brokerage</li>
-                    <li>Payment of duties and taxes (D&T) process within your bank</li>
-                    <li>Custom audit assistance</li>
-                </ul>
-                <img width="290" height="18" class="img-fluid pos-abs-bottom-0" src="{{ asset('v1/img/services/footer.png') }}" alt="division line">
-            </div>
-            <div class="col-md-3 mb-4 col-same-height-386">
-                <h4 class="gradient">Transportation services</h4>
-                <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-05.png') }}" alt="Transportation services">
-                </div>
-                <ul class="small">
-                    <li>Cross docking</li>
-                    <li>Ground transportation</li>
-                    <li>Reverse logistics</li>
-                    <li>KPI metrics</li>
-                </ul>
-                <img width="290" height="18" class="img-fluid pos-abs-bottom-0" src="{{ asset('v1/img/services/footer.png') }}" alt="division line">
-            </div>
-            <div class="col-md-3 mb-4 col-same-height-386">
-                <h4 class="gradient">Importer Trade compilance</h4>
-                <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-06.png') }}" alt="Importer Trade compilance">
-                </div>
-                <ul class="small">
-                    <li>Product classification</li>
-                    <li>Duty minimization</li>
-                    <li>Free trade program services</li>
-                    <li>In-house training</li>
-                    <li>Trade management</li>
-                    <li>Management and rebuild of Annex 24</li>
-                    <li>NOMs</li>
-                </ul>
-                <img width="290" height="18" class="img-fluid pos-abs-bottom-0" src="{{ asset('v1/img/services/footer.png') }}" alt="division line">
             </div>
         </div>
     </section>

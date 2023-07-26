@@ -13,7 +13,7 @@
                 <h3>CATEGORIES</h3>
                 <ul class="blog__categories_list">
                     @forelse($blog_categories AS $category)
-                        <li>
+                        <li class="blog__categories_list--item {{ \App\Helpers\Front::is_route("blog/{$category -> slug}") }}">
                             <a href="{{ route('blog-category', $category -> slug) }}">{{ $category -> title }}</a>
                         </li>
                     @empty
@@ -37,7 +37,7 @@
                         </div>
                     @empty
                         <div class="alert alert-warning">
-                            Articles are not available for the moment.
+                            Articles are not available for the moment in this category.
                         </div>
                     @endforelse
 
