@@ -19,7 +19,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 mb-4">
-                <h2 class="text-start"><strong>Compilance</strong></h2>
+                <h2 class="text-start"><strong>Compliance</strong></h2>
                 <p class="small-paragraph-clean">
                     Our policies, culture and procedures are periodically reviewed to guarantee the best experience for our clients. Regulations reviewed with experts in charge of monitoring compliance before, during and after customs clearance. We have a team of professionals to support our clients in the import and export processes as well in Customs Clearance and Trade Programs.
                 </p>

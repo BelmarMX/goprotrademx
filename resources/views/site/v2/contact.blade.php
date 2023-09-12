@@ -54,7 +54,7 @@
                     <img width="206" height="60" src="{{ asset('v1/img/goprotrade_id.png') }}" alt="GoProTradeMX">
                 </div>
                 <div class="text-end">
-                    <strong>hello@goprotrademx.com.mx</strong><br>
+                    <strong>hello@goprotrademx.com</strong><br>
                     <strong>+52 1 331 026 0000</strong>
                 </div>
             </div>

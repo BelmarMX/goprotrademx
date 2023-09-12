@@ -39,9 +39,10 @@
                 <p class="small-paragraph-clean text-center px-5">
                     Handled deftly on your behalf!
                 </p>
-
+            </div>
+            <div class="col-md-12 order-1">
                 <h3>Duty Management</h3>
-                <p class="small-paragraph-clean text-center">
+                <p class="small-paragraph-clean">
                     Duty management can uncover significant savings. We help you take full advantage of preferential trade programs and duty rates and other regimes such as IMMEX.
                 </p>
 

@@ -75,7 +75,8 @@ body{
     font-size: .8rem;
 }
 
-#featured{
+#featured,
+.featured{
     background: rgba($primary-color, .2);
     height: 85px;
     .star{
