@@ -78,7 +78,7 @@
                 </p>
             </div>
             <div class="col-md-6 order-0 text-center mb-3">
-                <img width="547" height="531" class="img-fluid" src="{{ asset('v1/img/services/aux-01-2.png') }}" alt="IMMEX">
+                <img width="547" height="531" class="img-fluid" src="{{ asset('v1/img/services/aux-01-3.png') }}" alt="IMMEX">
             </div>
         </div>
         <div class="row mb-5 align-items-center">
@@ -154,7 +154,7 @@
             <div class="col-md-3 mb-4 col-same-height-386">
                 <h4 class="gradient text-center">Exporter</h4>
                 <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-01.png') }}" alt="Exporter">
+                    <img width="200" height="122" class="img-fluid" src="{{ asset('v1/img/services/feat-01.png') }}" alt="Exporter">
                 </div>
                 <ul class="small orange-bullet">
                     <li>Document management</li>
@@ -167,7 +167,7 @@
             <div class="col-md-3 mb-4 col-same-height-386">
                 <h4 class="gradient text-center">Secure Transportation and Documentation</h4>
                 <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-02.png') }}" alt="Secure Transportation and Documentation">
+                    <img width="200" height="122" class="img-fluid" src="{{ asset('v1/img/services/feat-02.png') }}" alt="Secure Transportation and Documentation">
                 </div>
                 <ul class="small orange-bullet">
                     <li>Freight booking and pre-shipment process</li>
@@ -181,7 +181,7 @@
             <div class="col-md-3 mb-4 col-same-height-386">
                 <h4 class="gradient text-center">Shipping</h4>
                 <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-03.png') }}" alt="Shipping">
+                    <img width="200" height="122" class="img-fluid" src="{{ asset('v1/img/services/feat-03.png') }}" alt="Shipping">
                 </div>
                 <ul class="small orange-bullet">
                     <li>Ocean freight</li>
@@ -194,7 +194,7 @@
             <div class="col-md-3 mb-4 col-same-height-386">
                 <h4 class="gradient text-center">Customs</h4>
                 <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-04.png') }}" alt="Customs">
+                    <img width="200" height="122" class="img-fluid" src="{{ asset('v1/img/services/feat-04.png') }}" alt="Customs">
                 </div>
                 <ul class="small orange-bullet">
                     <li>Mexican custom brokerage</li>
@@ -206,7 +206,7 @@
             <div class="col-md-3 mb-4 col-same-height-386">
                 <h4 class="gradient text-center">Transportation services</h4>
                 <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-05.png') }}" alt="Transportation services">
+                    <img width="200" height="122" class="img-fluid" src="{{ asset('v1/img/services/feat-05.png') }}" alt="Transportation services">
                 </div>
                 <ul class="small orange-bullet">
                     <li>Cross docking</li>
@@ -219,7 +219,7 @@
             <div class="col-md-3 mb-4 col-same-height-386">
                 <h4 class="gradient text-center">Importer Trade compilance</h4>
                 <div class="text-center">
-                    <img width="234" height="143" class="img-fluid" src="{{ asset('v1/img/services/feat-06.png') }}" alt="Importer Trade compilance">
+                    <img width="200" height="122" class="img-fluid" src="{{ asset('v1/img/services/feat-06.png') }}" alt="Importer Trade compilance">
                 </div>
                 <ul class="small orange-bullet">
                     <li>Product classification</li>

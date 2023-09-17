@@ -55,7 +55,7 @@
                 </div>
                 <div class="text-end">
                     <strong>hello@goprotrademx.com</strong><br>
-                    <strong>+52 1 331 026 0000</strong>
+                    <strong>+52 1 333 201 7165</strong>
                 </div>
             </div>
         </div>

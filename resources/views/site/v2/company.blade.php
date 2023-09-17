@@ -7,8 +7,8 @@
 @section('content')
     <section id="main" class="container mb-5">
         <div class="row mb-4">
-            <div class="col-md-4">
-                <img width="394" height="114" class="img-fluid" src="{{ asset('v1/img/goprotrade-lg.png') }}" alt="GoPro Trade MX Logo">
+            <div class="col-md-4 text-center">
+                <img width="295" height="180" class="img-fluid" src="{{ asset('v1/img/goprotrade.svg') }}" alt="GoPro Trade MX Logo">
             </div>
             <div class="col-md-8">
                 <h1 class="gradient">History</h1>
